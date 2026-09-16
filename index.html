@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kemas Irfan Hamid — Founder LycusPay & Islamic Sharia Student</title>
+<meta name="description" content="Kemas Irfan Hamid — Founder LycusPay, Islamic Sharia student at Al-Azhar Cairo, and web developer." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="logo-mark">KI</span>
+      <span class="logo-text">Kemas<span class="logo-dot">.</span>Irfan</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button type="button" class="btn-hire" data-open-modal>Hire Me</button>
+      <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-mobile" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#journey" class="mobile-link">Journey</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#awards" class="mobile-link">Awards</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li>
+        <button type="button" class="mobile-link mobile-link--cta" data-open-modal>Hire Me</button>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+
+  <div class="hero-gradient"></div>
+
+  <!-- Floating tech icons -->
+  <div class="hero-floaters" aria-hidden="true">
+    <div class="floater" data-float="1">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" />
+    </div>
+    <div class="floater" data-float="2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" />
+    </div>
+    <div class="floater" data-float="3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" />
+    </div>
+    <div class="floater" data-float="4">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" />
+    </div>
+    <div class="floater" data-float="5">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" />
+    </div>
+    <div class="floater" data-float="6">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="" />
+    </div>
+    <div class="floater" data-float="7">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" />
+    </div>
+    <div class="floater" data-float="8">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" />
+    </div>
+
+    <div class="floater floater--text" data-float="9">
+      <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"/>
+        <polyline points="8 6 2 12 8 18"/>
+      </svg>
+    </div>
+    <div class="floater floater--text" data-float="10">
+      <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 17l6-6-6-6M12 19h8"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ============ ID CARD LAYER (di dalam hero) ============ -->
+  <div class="idcard-layer" id="idcardLayer" aria-hidden="true">
+    <!-- Tali lanyard -->
+    <div class="idcard-lanyard">
+      <div class="idcard-clip">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="8" y="2" width="8" height="6" rx="2"/>
+          <path d="M12 8v4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Kartu ID (draggable) -->
+    <div class="idcard" id="idcard">
+      <div class="idcard-hole"><span></span></div>
+
+      <div class="idcard-photo">
+        <img src="assets/images/profile.png" alt="Kemas Irfan Hamid" draggable="false"
+             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Kemas+Irfan&size=512&background=d4a24c&color=0f0f0f&bold=true';" />
+      </div>
+
+      <div class="idcard-info">
+        <div class="idcard-name">Kemas Irfan Hamid</div>
+        <div class="idcard-role">Founder · Developer · Student</div>
+
+        <div class="idcard-meta">
+          <div class="idcard-meta-row">
+            <span class="idcard-meta-label">ID</span>
+            <span class="idcard-meta-value">#2026-KI</span>
+          </div>
+          <div class="idcard-meta-row">
+            <span class="idcard-meta-label">LOC</span>
+            <span class="idcard-meta-value">Cairo, Egypt</span>
+          </div>
+        </div>
+
+        <div class="idcard-barcode">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konten utama hero -->
+  <div class="hero-content">
+
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      <span>Hello Everyone</span>
+    </div>
+
+    <h1 class="hero-title">
+      Welcome, To My <span class="gradient">Portfolio</span>
+    </h1>
+
+    <p class="hero-desc">
+      I'm a student, founder &amp; developer — blending Islamic scholarship
+      with a passion for building things on the web.
+    </p>
+
+    <div class="hero-typed">
+      <span id="typedText"></span>
+      <span class="cursor"></span>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary">Project</a>
+      <a href="assets/MY CV.pdf" download class="btn btn-outline">Resume</a>
+    </div>
+
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll">
+    <span class="scroll-indicator-label">Scroll</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">About Me</span>
+      <h2 class="scroll-type" data-type="Problem Solver. Digital Generalist.">
+        <span class="scroll-type-text"></span><span class="typing-cursor"></span>
+      </h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-avatar reveal">
+        <img src="assets/images/profile.png" alt="Kemas Irfan"
+             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Kemas+Irfan&size=512&background=d4a24c&color=0f0f0f&bold=true';" />
+        <span class="about-avatar-ring"></span>
+        <span class="about-avatar-check" title="Verified">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81C14.67 2.63 13.43 1.75 12 1.75s-2.67.88-3.34 2.19c-1.39-.46-2.9-.2-3.91.81s-1.27 2.52-.81 3.91C2.63 9.33 1.75 10.57 1.75 12s.88 2.67 2.19 3.34c-.46 1.39-.2 2.9.81 3.91s2.52 1.27 3.91.81C9.33 21.37 10.57 22.25 12 22.25s2.67-.88 3.34-2.19c1.39.46 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"/></svg>
+        </span>
+      </div>
+
+      <div class="about-content reveal">
+        <div class="about-name">
+          Kemas Irfan Hamid
+          <span class="about-verified">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81C14.67 2.63 13.43 1.75 12 1.75s-2.67.88-3.34 2.19c-1.39-.46-2.9-.2-3.91.81s-1.27 2.52-.81 3.91C2.63 9.33 1.75 10.57 1.75 12s.88 2.67 2.19 3.34c-.46 1.39-.2 2.9.81 3.91s2.52 1.27 3.91.81C9.33 21.37 10.57 22.25 12 22.25s2.67-.88 3.34-2.19c1.39.46 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"/></svg>
+          </span>
+        </div>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-label">Projects</span>
+            <span class="about-stat-value">5+</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-label">Certificates</span>
+            <span class="about-stat-value">5</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-label">Al-Azhar</span>
+            <span class="about-stat-value">2026</span>
+          </div>
+        </div>
+
+        <div class="about-bio">
+          <p>
+            I'm <strong>Kemas Irfan Hamid</strong> — founder of <strong>LycusPay</strong>, a digital marketplace,
+            and an Islamic Sharia student at <strong>Al-Azhar University, Cairo</strong>. I build real-world
+            digital products while studying classical <em>fiqh</em> and <em>ushul fiqh</em>.
+          </p>
+          <p>
+            People often ask why I took a 180-degree turn toward Islamic studies. For me, it's about
+            balance — preparing to lead a family and shoulder future responsibilities. So I temporarily
+            paused my IT pursuits to dive deep into Islamic scholarship at Al-Azhar, blending my
+            passion for technology with a strong foundation in classical knowledge.
+          </p>
+          <a href="assets/MY CV.pdf" download class="about-link">
+            Download my resume
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-currently reveal">
+      <span class="about-currently-label">Currently</span>
+      <div class="about-currently-grid">
+        <div class="about-currently-item">
+          <div class="about-currently-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+          </div>
+          <div>
+            <div class="about-currently-title">Building</div>
+            <div class="about-currently-sub">LycusPay &amp; web projects</div>
+          </div>
+        </div>
+        <div class="about-currently-item">
+          <div class="about-currently-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 10v6M4.22 4.22l4.24 4.24m7.08 7.08 4.24 4.24M1 12h6m10 0h6M4.22 19.78l4.24-4.24m7.08-7.08 4.24-4.24"/></svg>
+          </div>
+          <div>
+            <div class="about-currently-title">Studying</div>
+            <div class="about-currently-sub">Islamic Sharia · Al-Azhar Cairo</div>
+          </div>
+        </div>
+        <div class="about-currently-item">
+          <div class="about-currently-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <div class="about-currently-title">Learning</div>
+            <div class="about-currently-sub">Full-stack &amp; Desain Grafis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-traits reveal">
+      <div class="trait-card trait-card--3">
+        <span class="trait-card-label">TRAIT</span>
+        <span class="trait-card-value">Organized</span>
+      </div>
+      <div class="trait-card trait-card--2">
+        <span class="trait-card-label">TRAIT</span>
+        <span class="trait-card-value">Curious</span>
+      </div>
+      <div class="trait-card trait-card--1">
+        <span class="trait-card-label">TRAIT</span>
+        <span class="trait-card-value">Detail-Oriented</span>
+      </div>
+    </div>
+
+    <div class="tech-stack reveal">
+      <div class="tech-stack-label">Tech Stack</div>
+      <div class="tech-stack-grid" id="techStack"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="section section-alt" id="journey">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">02 — Journey</span>
+      <h2 class="scroll-type" data-type="The path so far">
+        <span class="scroll-type-text"></span><span class="typing-cursor"></span>
+      </h2>
+    </div>
+    <div class="timeline" id="journeyList"></div>
+  </div>
+</section>
+
+<!-- ============ WORK GALLERY ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Selected Work</span>
+      <div class="section-head-row">
+        <div>
+          <h2 class="scroll-type" data-type="Work Gallery">
+            <span class="scroll-type-text"></span><span class="typing-cursor"></span>
+          </h2>
+          <p class="section-lead">
+            A collection of systems, digital projects, and technical work I've built.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery reveal" id="gallery">
+      <div class="gallery-stage" id="galleryStage"></div>
+
+      <div class="gallery-info" id="galleryInfo">
+        <h3 class="gallery-title" id="galleryTitle">—</h3>
+        <p class="gallery-desc" id="galleryDesc">—</p>
+        <a href="#" class="gallery-link" id="galleryLink">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="gallery-nav">
+        <button class="gallery-btn" id="galleryPrev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="gallery-dots" id="galleryDots"></div>
+        <button class="gallery-btn" id="galleryNext" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section class="section section-alt" id="awards">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Recognition</span>
+      <h2 class="scroll-type" data-type="Awards and Achievements">
+        <span class="scroll-type-text"></span><span class="typing-cursor"></span>
+      </h2>
+      <p class="section-lead">
+        A collection of academic, professional, and entrepreneurial recognitions
+        that reflect my dedication to excellence.
+      </p>
+    </div>
+
+    <div class="awards-layout">
+      <div class="awards-gallery reveal" id="awardsGallery"></div>
+      <div class="awards-list reveal" id="awardsList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact-section" id="contact">
+  <div class="contact-glow"></div>
+  <div class="container container-relative">
+    <div class="contact-header reveal">
+      <span class="section-tag">05 — Contact</span>
+      <h2 class="contact-title">LET'S WORK<br /><span class="muted">TOGETHER</span></h2>
+      <p class="contact-lead">
+        Whether it's a development project, a collaboration on Islamic content,
+        or just a conversation — I'd love to hear from you.
+      </p>
+    </div>
+    <div class="contact-grid reveal" id="contactGrid"></div>
+    <div class="contact-cta reveal">
+      <button type="button" class="btn-large" data-open-modal>
+        Send Me a Message
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">KI</span>
+      <span class="footer-copy" id="footerCopy">© 2026 Kemas Irfan Hamid</span>
+    </div>
+    <div class="footer-right">
+      <span class="footer-loc">Cairo · Indonesia</span>
+      <button class="footer-top" id="backToTop">
+        Back to top
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MESSAGE MODAL ============ -->
+<div class="modal" id="messageModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-header">
+      <h3 class="modal-title" id="modalTitle">Send Me a Message</h3>
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <form class="modal-form" id="messageForm" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="msgName">Full Name</label>
+        <input class="form-input" type="text" id="msgName" name="name" placeholder="Your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="msgEmail">Email Address</label>
+        <input class="form-input" type="email" id="msgEmail" name="email" placeholder="your.email@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="msgBody">Message</label>
+        <textarea class="form-input form-textarea" id="msgBody" name="message" placeholder="Tell me about your project..." required></textarea>
+      </div>
+
+      <button class="form-submit" type="submit">
+        <span class="form-submit-text">Send Message</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FLOATING MESSAGE BUTTON ============ -->
+<button type="button" class="fab" id="fabMessage" data-open-modal aria-label="Send me a message">
+  <svg class="fab-icon fab-icon--chat" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+  </svg>
+  <svg class="fab-icon fab-icon--close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 6 6 18M6 6l12 12"/>
+  </svg>
+  <span class="fab-pulse"></span>
+</button>
+
+<!-- ============================================================
+     JS — path RELATIF (tanpa leading slash)
+     ============================================================ -->
+<script src="/js/config.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/marquee.js"></script>
+</body>
+</html>
